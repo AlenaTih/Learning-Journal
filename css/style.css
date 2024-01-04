@@ -1,5 +1,21 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 html, 
 body {
     margin: 0;
     padding: 0;
 }
+
+/* Typography and icons */
+
+/* Layout */
+
+/* Buttons */
+
+/* Images */
+
+/* Links */
+
+/* Media queries */
