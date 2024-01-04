@@ -12,9 +12,32 @@ body {
 
 /* Layout */
 
+.container {
+    display: flex;
+    width: 100%;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    padding: 2.5rem 3.125rem;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 /* Buttons */
 
 /* Images */
+
+.logo-image {
+    height: 40%;
+}
 
 /* Links */
 
