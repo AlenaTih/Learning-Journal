@@ -14,6 +14,7 @@ body {
 
 .container {
     display: flex;
+    flex-direction: column;
     width: 100%;
     overflow-x: hidden; /* Prevents horizontal scrolling */
     padding: 2.5rem 3.125rem;
@@ -31,14 +32,58 @@ header {
     gap: 1rem;
 }
 
+.recent-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1rem;
+}
+
+.recent-posts-heading {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.recent-post {
+    background: pink;
+    border-radius: 10px;;
+}
+
+.about-me-top {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.about-me-top-text {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Buttons */
 
 /* Images */
 
-.logo-image {
+/* .logo-image {
     height: 40%;
+} */
+
+.recent-post-image {
+    border-radius: 10px;
 }
 
 /* Links */
 
 /* Media queries */
+
+@media (min-width: 600px) {
+    .recent-posts {
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+    }
+}
