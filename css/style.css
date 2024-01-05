@@ -47,7 +47,8 @@ nav {
 header,
 .recent-posts,
 .featured-post-main,
-.about-me {
+.about-me,
+.recent-posts-more {
     padding: 2.5rem 3.125rem;
 }
 
@@ -77,6 +78,18 @@ header,
     grid-gap: 1rem;
     width: 100%;
     margin: 0 auto;
+}
+
+.recent-posts-more {
+    display: none; /* grid when displayed */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.more-feed {
+    display: none; /* block when displayed */
 }
 
 .recent-posts-heading {
@@ -149,6 +162,7 @@ nav a:hover {
 
 /* Media queries */
 
+/* @media (width >= 600px) */
 @media (min-width: 600px) {
     /* Layout */
 
@@ -161,7 +175,8 @@ nav a:hover {
         grid-row: -2 / -1;
     }
 
-    .recent-posts {
+    .recent-posts,
+    .recent-posts-more {
         grid-template-columns: repeat(3, minmax(200px, 1fr));
     }
 
