@@ -4,9 +4,7 @@ const mobileNavHome = document.getElementById("mobile-nav-home")
 const mobileNavPosts = document.getElementById("mobile-nav-posts")
 const mobileNavMe = document.getElementById("mobile-nav-me")
 
-const viewMoreButton = document.getElementById("view-more-button")
 const moreRecentPostsFeed = document.getElementById("recent-posts-more-feed")
-const viewEvenMoreButton = document.getElementById("view-even-more-button")
 
 const newPost = {
     image: "images/blog-image.png",
@@ -16,31 +14,46 @@ const newPost = {
     preview: "I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.",
     }
 
-mobileNavHome.addEventListener("click", function() {
+document.addEventListener("click", function(e) {
+    if (e.target.id === "hamburger-home") {
+        showMenuHome()
+    } else if (e.target.id === "hamburger-posts") {
+        showMenuPosts()
+    } else if (e.target.id === "hamburger-about") {
+        showMenuAbout()
+    } else if (e.target.id === "view-more-button") {
+        showMorePosts()
+    } else if (e.target.id === "view-even-more-button") {
+        showEvenMorePosts()
+    }
+})
+
+function showMenuHome() {
+    console.log("click")
     mobileNavHome.innerHTML = `
     <ul>
         <li><a href="posts.html">Recent posts</a></li>
         <li><a href="about-me.html">About me</a></li>
     <ul>`
-})
+}
 
-mobileNavPosts.addEventListener("click", function() {
+function showMenuPosts() {
+    console.log("click")
     mobileNavPosts.innerHTML = `
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about-me.html">About me</a></li>
     <ul>`
-})
+}
 
-mobileNavMe.addEventListener("click", function() {
+function showMenuAbout() {
+    console.log("click")
     mobileNavMe.innerHTML = `
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="posts.html">Recent Posts</a></li>
     <ul>`
-})
-
-viewMoreButton.addEventListener("click", showMorePosts)
+}
 
 function showMorePosts() {
     document.querySelector(".more-feed").style.display = "block"
@@ -65,14 +78,11 @@ function showMorePosts() {
 
 }
 
-viewEvenMoreButton.addEventListener("click", function() {
-    console.log("clicked")
+function showEvenMorePosts() {
 
     morePosts.push(newPost)
     morePosts.push(newPost)
     morePosts.push(newPost)    
 
     showMorePosts()
-})
-
-
+}
