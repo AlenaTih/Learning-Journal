@@ -44,13 +44,31 @@ nav {
     gap: 1rem;
 }
 
-header, main {
+header,
+.recent-posts,
+.featured-post-main,
+.about-me {
     padding: 2.5rem 3.125rem;
 }
 
 .featured-post {
-    background-image: url("Images/featured-post-image.png");
-    /* background-color: lightpink; */
+    color: whitesmoke;
+    display: grid;
+    grid-template-columns: 3.125rem auto 3.125rem;
+}
+
+.featured-post-image {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.featured-post-text {
+    grid-column: 2 / -2;
+    grid-row: 2 / -1;
+    padding: 3rem 1rem;
 }
 
 .recent-posts {
@@ -112,6 +130,10 @@ footer {
     border-radius: 50%;
 }
 
+.featured-post-main-image {
+    width: 100%;
+}
+
 /* Links */
 
 nav a {
@@ -129,6 +151,16 @@ nav a:hover {
 
 @media (min-width: 600px) {
     /* Layout */
+
+    .featured-post {
+        max-height: 40%;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .featured-post-text {
+        grid-row: -2 / -1;
+    }
+
     .recent-posts {
         grid-template-columns: repeat(3, minmax(200px, 1fr));
     }
@@ -141,6 +173,10 @@ nav a:hover {
 
     .avatar-image {
         width: 40%;
+    }
+
+    .featured-post-main-image {
+        height: 488px;
     }
 
 }
