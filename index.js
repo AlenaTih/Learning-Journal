@@ -1,5 +1,9 @@
 import morePosts from '/data.js'
 
+const mobileNavHome = document.getElementById("mobile-nav-home")
+const mobileNavPosts = document.getElementById("mobile-nav-posts")
+const mobileNavMe = document.getElementById("mobile-nav-me")
+
 const viewMoreButton = document.getElementById("view-more-button")
 const moreRecentPostsFeed = document.getElementById("recent-posts-more-feed")
 const viewEvenMoreButton = document.getElementById("view-even-more-button")
@@ -11,6 +15,30 @@ const newPost = {
     title: "Blog four",
     preview: "I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.",
     }
+
+mobileNavHome.addEventListener("click", function() {
+    mobileNavHome.innerHTML = `
+    <ul>
+        <li><a href="posts.html">Recent posts</a></li>
+        <li><a href="about-me.html">About me</a></li>
+    <ul>`
+})
+
+mobileNavPosts.addEventListener("click", function() {
+    mobileNavPosts.innerHTML = `
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-me.html">About me</a></li>
+    <ul>`
+})
+
+mobileNavMe.addEventListener("click", function() {
+    mobileNavMe.innerHTML = `
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="posts.html">Recent Posts</a></li>
+    <ul>`
+})
 
 viewMoreButton.addEventListener("click", showMorePosts)
 
@@ -46,3 +74,5 @@ viewEvenMoreButton.addEventListener("click", function() {
 
     showMorePosts()
 })
+
+
