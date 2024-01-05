@@ -102,6 +102,12 @@ header,
     border-radius: 10px;;
 }
 
+.button-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
 .about-me-top {
     display: flex;
     flex-direction: column;
@@ -127,11 +133,12 @@ footer {
 
 /* Buttons */
 
-/* Images */
+.view-more-button {
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
 
-/* .logo-image {
-    height: 40%;
-} */
+/* Images */
 
 .recent-post-image {
     width: 100%;

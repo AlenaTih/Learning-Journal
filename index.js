@@ -4,6 +4,14 @@ const viewMoreButton = document.getElementById("view-more-button")
 const moreRecentPostsFeed = document.getElementById("recent-posts-more-feed")
 const viewEvenMoreButton = document.getElementById("view-even-more-button")
 
+const newPost = {
+    image: "images/blog-image.png",
+    alt: "recent post image",
+    info: "JULY 23, 2022",
+    title: "Blog four",
+    preview: "I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.",
+    }
+
 viewMoreButton.addEventListener("click", showMorePosts)
 
 function showMorePosts() {
@@ -23,17 +31,11 @@ function showMorePosts() {
 
     })
 
-
     moreRecentPostsFeed.innerHTML = morePostsHtml
-}
 
-const newPost = {
-        image: "images/blog-image.png",
-        alt: "recent post image",
-        info: "JULY 23, 2022",
-        title: "Blog four",
-        preview: "I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.",
-        }
+    document.getElementById("button-container-top").style.display = "none"
+
+}
 
 viewEvenMoreButton.addEventListener("click", function() {
     console.log("clicked")
