@@ -29,30 +29,33 @@ document.addEventListener("click", function(e) {
 })
 
 function showMenuHome() {
-    console.log("click")
     mobileNavHome.innerHTML = `
-    <ul>
-        <li><a href="posts.html">Recent posts</a></li>
-        <li><a href="about-me.html">About me</a></li>
-    <ul>`
+    <div class="mobile-menu-container">
+        <ul>
+            <li><a href="posts.html">Recent posts</a></li>
+            <li><a href="about-me.html">About me</a></li>
+        <ul>
+    </div>`
 }
 
 function showMenuPosts() {
-    console.log("click")
     mobileNavPosts.innerHTML = `
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about-me.html">About me</a></li>
-    <ul>`
+    <div class="mobile-menu-container">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-me.html">About me</a></li>
+        <ul>
+    </div>`
 }
 
 function showMenuAbout() {
-    console.log("click")
     mobileNavMe.innerHTML = `
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="posts.html">Recent Posts</a></li>
-    <ul>`
+    <div class="mobile-menu-container">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="posts.html">Recent posts</a></li>
+        <ul>
+    </div>`
 }
 
 function showMorePosts() {
