@@ -1,6 +1,6 @@
 const morePosts = [
     {
-        image: "images/blog-image.png",
+        image: "images/blog-four-image.png",
         alt: "recent post image",
         info: "JULY 23, 2022",
         title: "Blog four",
@@ -8,7 +8,7 @@ const morePosts = [
     
     },
     {
-        image: "images/blog-image.png",
+        image: "images/blog-five-image.png",
         alt: "recent post image",
         info: "JULY 23, 2022",
         title: "Blog five",
@@ -16,7 +16,7 @@ const morePosts = [
     
     },
     {
-        image: "images/blog-image.png",
+        image: "images/blog-six-image.png",
         alt: "recent post image",
         info: "JULY 23, 2022",
         title: "Blog six",

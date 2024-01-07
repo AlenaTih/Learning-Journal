@@ -1,4 +1,5 @@
 import morePosts from '/data.js'
+import footer from '/footer.js'
 
 const mobileNavHome = document.getElementById("mobile-nav-home")
 const mobileNavPosts = document.getElementById("mobile-nav-posts")
@@ -6,8 +7,24 @@ const mobileNavMe = document.getElementById("mobile-nav-me")
 
 const moreRecentPostsFeed = document.getElementById("recent-posts-more-feed")
 
+const footerHome = document.getElementById("footer-container-home")
+const footerPosts = document.getElementById("footer-container-posts")
+const footerAbout = document.getElementById("footer-container-about")
+
+function renderFooterHome() {
+    footerHome.innerHTML = footer
+}
+
+function renderFooterPosts() {
+    footerPosts.innerHTML = footer
+}
+
+function renderFooterAbout() {
+    footerAbout.innerHTML = footer
+}
+
 const newPost = {
-    image: "images/blog-image.png",
+    image: "images/blog-one-image.png",
     alt: "recent post image",
     info: "JULY 23, 2022",
     title: "Blog four",
@@ -89,3 +106,7 @@ function showEvenMorePosts() {
 
     showMorePosts()
 }
+
+renderFooterHome()
+renderFooterPosts()
+renderFooterAbout()
