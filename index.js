@@ -11,7 +11,7 @@ const newPost = {
     image: "images/blog-one-image.png",
     alt: "recent post image",
     info: "JULY 23, 2022",
-    title: "Blog four",
+    title: "Blog",
     preview: "I'm excited to share what I learn and build in Scrimba's Frontend Development course!",
     }
 

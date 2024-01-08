@@ -3,24 +3,24 @@ const morePosts = [
         image: "images/blog-four-image.png",
         alt: "recent post image",
         info: "JULY 23, 2022",
-        title: "Blog four",
-        preview: "I'm excited to share what I learn and build in Scrimba's Frontend Development course!",
+        title: "Navigating the Sea of Frameworks",
+        preview: "Venturing into the sea of frontend frameworks can be overwhelming, but fear not! Join me as I navigate through frameworks like React and Vue, discovering their power in simplifying complex tasks.",
     
     },
     {
         image: "images/blog-five-image.png",
         alt: "recent post image",
         info: "JULY 23, 2022",
-        title: "Blog five",
-        preview: "I'm excited to share what I learn and build in Scrimba's Frontend Development course!",
+        title: "The Bug-Hunting Chronicles",
+        preview: "Every coder encounters bugs, and I'm no exception. Follow my bug-hunting journey, where every glitch becomes an opportunity to learn and refine my coding skills.",
     
     },
     {
         image: "images/blog-six-image.png",
         alt: "recent post image",
         info: "JULY 23, 2022",
-        title: "Blog six",
-        preview: "I'm excited to share what I learn and build in Scrimba's Frontend Development course!",
+        title: "Looking Ahead — Future Goals",
+        preview: "As I reflect on the journey so far, it's time to set new goals. Explore with me the exciting roadmap ahead, filled with advanced concepts, projects, and the continuous pursuit of mastery in Frontend development.",
     
     },
 ]
