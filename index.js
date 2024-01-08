@@ -12,7 +12,7 @@ const newPost = {
     alt: "recent post image",
     info: "JULY 23, 2022",
     title: "Blog four",
-    preview: "I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.",
+    preview: "I'm excited to share what I learn and build in Scrimba's Frontend Development course!",
     }
 
 document.addEventListener("click", function(e) {

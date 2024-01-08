@@ -5,6 +5,8 @@
 html, 
 body {
     color: #090909;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #F0F9FF;
     margin: 0;
     padding: 0;
     user-select: text;
@@ -106,7 +108,6 @@ header,
 }
 
 .recent-post {
-    background: pink;
     border-radius: 10px;;
 }
 
