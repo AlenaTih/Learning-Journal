@@ -8,7 +8,7 @@ const mobileNavMe = document.getElementById("mobile-nav-me")
 const moreRecentPostsFeed = document.getElementById("recent-posts-more-feed")
 
 const newPost = {
-    image: "images/blog-one-image.png",
+    image: "images/blog-new-image.png",
     alt: "recent post image",
     info: "JULY 23, 2022",
     title: "Blog",
@@ -91,27 +91,9 @@ function showEvenMorePosts() {
     showMorePosts()
 }
 
-function renderFooterHome() {
-    const footerHome = document.getElementById("footer-container-home")
-    if (footerHome) {
-        footerHome.innerHTML = footer
-    }
+function renderFooter() {
+    const footerEl = document.querySelector("footer")
+    footerEl.innerHTML = footer
 }
 
-function renderFooterPosts() {
-    const footerPosts = document.getElementById("footer-container-posts")
-    if (footerPosts) {
-        footerPosts.innerHTML = footer
-    }
-}
-
-function renderFooterAbout() {
-    const footerAbout = document.getElementById("footer-container-about")
-    if (footerAbout) {
-        footerAbout.innerHTML = footer
-    }
-}
-
-renderFooterHome()
-renderFooterPosts()
-renderFooterAbout()
+renderFooter()
