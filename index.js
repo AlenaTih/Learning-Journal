@@ -7,22 +7,6 @@ const mobileNavMe = document.getElementById("mobile-nav-me")
 
 const moreRecentPostsFeed = document.getElementById("recent-posts-more-feed")
 
-const footerHome = document.getElementById("footer-container-home")
-const footerPosts = document.getElementById("footer-container-posts")
-const footerAbout = document.getElementById("footer-container-about")
-
-function renderFooterHome() {
-    footerHome.innerHTML = footer
-}
-
-function renderFooterPosts() {
-    footerPosts.innerHTML = footer
-}
-
-function renderFooterAbout() {
-    footerAbout.innerHTML = footer
-}
-
 const newPost = {
     image: "images/blog-one-image.png",
     alt: "recent post image",
@@ -105,6 +89,27 @@ function showEvenMorePosts() {
     morePosts.push(newPost)    
 
     showMorePosts()
+}
+
+function renderFooterHome() {
+    const footerHome = document.getElementById("footer-container-home")
+    if (footerHome) {
+        footerHome.innerHTML = footer
+    }
+}
+
+function renderFooterPosts() {
+    const footerPosts = document.getElementById("footer-container-posts")
+    if (footerPosts) {
+        footerPosts.innerHTML = footer
+    }
+}
+
+function renderFooterAbout() {
+    const footerAbout = document.getElementById("footer-container-about")
+    if (footerAbout) {
+        footerAbout.innerHTML = footer
+    }
 }
 
 renderFooterHome()

@@ -1,5 +1,5 @@
 const footer = `
 <h4>My Learning Journal</h4>
-<h8>Copyright ©2024</h8>`
+<h6>Copyright ©2024</h6>`
 
 export default footer
