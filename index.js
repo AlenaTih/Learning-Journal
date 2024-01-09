@@ -11,7 +11,7 @@ const moreRecentPostsFeed = document.getElementById("recent-posts-more-feed")
 const newPost = {
     image: "images/blog-new-image.png",
     alt: "recent post image",
-    info: "JULY 23, 2022",
+    info: "JAN 9 2024",
     title: "Blog",
     preview: "I'm excited to share what I learn and build in Scrimba's Frontend Development course!",
     }
