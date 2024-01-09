@@ -15,7 +15,7 @@ body {
 /* Typography and icons */
 
 header h1 {
-    font-size: 1.375rem;
+    font-size: 1.25rem;
 }
 
 nav {
@@ -26,7 +26,40 @@ i {
     cursor: pointer;
 }
 
+.post-title {
+    font-size: 2.25rem;
+}
+
+.about-me-title {
+    font-size: 2rem;
+}
+
+.post-preview,
+.about-me-preview {
+    font-size: 1.25rem;
+    margin-top: 0;
+}
+
+.featured-post-main .post-preview {
+    margin-bottom: 2rem;
+}
+
+.recent-posts-heading {
+    font-size: 1.7rem;
+}
+
+.recent-post-title {
+    font-size: 1.5rem;
+}
+
+footer h4 {
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
 footer h6 {
+    font-size: 0.75rem;
+    font-weight: 400;
     margin-top: 0;
 }
 
@@ -58,18 +91,23 @@ nav {
     gap: 1rem;
 }
 
+.mobile-nav {
+    display: flex;
+}
+
 header,
 .recent-posts,
 .featured-post-main,
 .about-me,
 .recent-posts-more {
-    padding: 2.5rem 3.125rem;
+    padding: 2.5rem 1.25rem;
 }
 
 .featured-post {
     color: whitesmoke;
     display: grid;
-    grid-template-columns: 3.125rem auto 3.125rem;
+    grid-template-columns: 1.25rem auto 1.25rem;
+    margin-bottom: 1.875rem;
 }
 
 .featured-post-image {
@@ -89,6 +127,7 @@ header,
 .featured-post-main {
     display: flex;
     flex-direction: column;
+    padding-bottom: 0;
 }
 
 .recent-posts {
@@ -97,6 +136,8 @@ header,
     grid-gap: 1rem;
     width: 100%;
     margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 0;
 }
 
 .recent-posts-more {
@@ -105,6 +146,7 @@ header,
     grid-gap: 1rem;
     width: 100%;
     margin: 0 auto;
+    padding-bottom: 0;
 }
 
 .more-feed {
@@ -123,7 +165,11 @@ header,
 .button-container {
     display: flex;
     justify-content: center;
-    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.about-me {
+    padding-bottom: 0;
 }
 
 .about-me-top {
@@ -141,10 +187,10 @@ header,
 .link-to-posts {
     display: flex;
     justify-content: center;
-    padding-bottom: 2rem;
 }
 
 .mobile-menu-container {
+    display: none; /* flex when displayed  */
    background-color: pink;
    position: absolute;
    top: 2.5rem;
@@ -176,9 +222,14 @@ footer {
     background-color: #202020;
     padding: 2rem;
     width: 100%;
+    margin-top: 3rem;
 }
 
 /* Buttons */
+
+button {
+    font-weight: 500;
+}
 
 .view-more-button {
     color: whitesmoke;
@@ -227,9 +278,11 @@ nav a:hover {
 
 .link-to-posts a {
     color: whitesmoke;
+    font-weight: 500;
     background-color: #6989FA;
     border-radius: 10px;
     padding: 1rem 2rem;
+    margin-top: 2rem;
     cursor: pointer;
     text-decoration: none;
 }
@@ -249,15 +302,50 @@ nav a:hover {
 
 /* @media (width >= 600px) */
 @media (min-width: 600px) {
+    /* Typography */
+
+    header h1 {
+        font-size: 1.375rem;
+    }
+    
+    .post-title,
+    .about-me-title {
+        font-size: 2.5rem;
+    }
+
+    .post-preview,
+    .about-me-preview {
+        font-size: 1.375;
+    }
+
+    footer h4, h6 {
+        font-size: 1rem;
+    }
+    
     /* Layout */
 
     .mobile-nav {
         display: none;
     }
 
+    header,
+    .recent-posts,
+    .featured-post-main,
+    .about-me,
+    .recent-posts-more {
+    padding: 2.5rem 3.125rem;
+}
+
+    .featured-post-main,
+    .about-me {
+        padding-bottom: 0;
+    }
+
     .featured-post {
         max-height: 40%;
+        grid-template-columns: 3.125rem auto 3.125rem;
         grid-template-rows: 1fr 1fr 1fr;
+        margin-bottom: 2rem;
     }
 
     .featured-post-text {
@@ -283,6 +371,16 @@ nav a:hover {
         padding-top: 1.5rem;
         padding-left: 3rem;
     }
+
+    .button-container,
+    .link-to-posts a {
+        margin-top: 3rem;
+    }
+
+    footer {
+        margin-top: 4rem;
+    }
+
 
     /* Images */
 
