@@ -6,7 +6,7 @@ html,
 body {
     color: #090909;
     font-family: 'Source Sans Pro', sans-serif;
-    background-color: #F0F9FF;
+    background-color: #F9FAFB;
     margin: 0;
     padding: 0;
     user-select: text;
@@ -26,7 +26,7 @@ i {
     cursor: pointer;
 }
 
-h6 {
+footer h6 {
     margin-top: 0;
 }
 
@@ -117,7 +117,7 @@ header,
 }
 
 .recent-post {
-    border-radius: 10px;;
+    border-radius: 10px;
 }
 
 .button-container {
@@ -291,7 +291,7 @@ nav a:hover {
     }
 
     /* .featured-post-image {
-        
+        height: 400px;
     } */
 
     .featured-post-main-image {
