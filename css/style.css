@@ -148,7 +148,7 @@ header,
 .recent-posts {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 1.5rem;
+    grid-gap: 2rem;
     width: 100%;
     margin: 0 auto;
     padding-top: 1rem;
@@ -158,7 +158,7 @@ header,
 .recent-posts-more {
     display: none; /* grid when displayed */
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 1.5rem;
+    grid-gap: 2rem;
     width: 100%;
     margin: 0 auto;
     padding-bottom: 0;
