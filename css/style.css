@@ -12,9 +12,15 @@ body {
     user-select: text;
 }
 
+/* body {
+    color: whitesmoke;
+    background-color: #1F2937;
+} */
+
 /* Typography and icons */
 
-header h1 {
+.logo-container a {
+    /* color: whitesmoke; */
     font-size: 1.25rem;
 }
 
@@ -34,6 +40,10 @@ i {
     font-size: 2rem;
 }
 
+.about-me-subtitle:last-of-type {
+    margin-top: 2rem;
+}
+
 .post-preview,
 .about-me-preview {
     font-size: 1.25rem;
@@ -42,6 +52,10 @@ i {
 
 .featured-post-main .post-preview {
     margin-bottom: 2rem;
+}
+
+.main-post-subtitle {
+    margin-bottom: 0.7rem;
 }
 
 .recent-posts-heading {
@@ -53,12 +67,12 @@ i {
 }
 
 footer h4 {
-    font-size: 0.75rem;
+    font-size: 1.125rem;
     font-weight: 700;
 }
 
 footer h6 {
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-weight: 400;
     margin-top: 0;
 }
@@ -74,6 +88,7 @@ footer h6 {
 
 header {
     display: flex;
+    /* background-color: #374151; */
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -162,6 +177,13 @@ header,
     border-radius: 10px;
 }
 
+.recent-post-image:hover,
+.recent-post-title:hover {
+/* .recent-post-preview:hover,
+.recent-post .post-info:hover { */
+    cursor: pointer;
+}
+
 .button-container {
     display: flex;
     justify-content: center;
@@ -192,6 +214,7 @@ header,
 .mobile-menu-container {
     display: none; /* flex when displayed  */
    background-color: pink;
+   background-color: #090909;
    position: absolute;
    top: 2.5rem;
    right: 0;
@@ -210,7 +233,8 @@ li:last-of-type {
 }
 
 li:hover {
-    background-color: lightgray;
+    /* background-color: lightgray; */
+    background-color: #374151;
 }
 
 footer {
@@ -228,7 +252,7 @@ footer {
 /* Buttons */
 
 button {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .view-more-button {
@@ -255,6 +279,7 @@ button {
 .featured-post-main-image {
     width: 100%;
     border-radius: 10px;
+    margin: 0.5rem auto 1.5rem auto;
 }
 
 /* Links */
@@ -266,7 +291,6 @@ h1 a {
 }
 
 nav a {
-    color: #090909;
     font-size: 1rem;
     text-decoration: none;
     text-transform: uppercase;
@@ -276,9 +300,17 @@ nav a:hover {
     text-decoration: underline;
 }
 
+.mobile-menu-container a {
+    color: whitesmoke;
+}
+
+.desktop-nav a {
+    color: #090909;
+}
+
 .link-to-posts a {
     color: whitesmoke;
-    font-weight: 500;
+    font-weight: 600;
     background-color: #6989FA;
     border-radius: 10px;
     padding: 1rem 2rem;
@@ -304,7 +336,7 @@ nav a:hover {
 @media (min-width: 600px) {
     /* Typography */
 
-    header h1 {
+    .logo-container a {
         font-size: 1.375rem;
     }
     
@@ -313,13 +345,26 @@ nav a:hover {
         font-size: 2.5rem;
     }
 
+    /* .about-me-subtitle {
+        font-size: 1.25rem;
+    } */
+
     .post-preview,
     .about-me-preview {
-        font-size: 1.375;
+        /* font-size: 1.375; */
+        font-size: 1.5rem;
     }
 
-    footer h4, h6 {
-        font-size: 1rem;
+    p {
+        font-size: 1.125rem;
+    }
+
+    footer h4 {
+        font-size: 1.25rem;
+    }
+    
+    footer h6 {
+        font-size: 1.125rem;
     }
     
     /* Layout */
@@ -388,13 +433,9 @@ nav a:hover {
         width: 20%;
     }
 
-    /* .featured-post-image {
-        height: 400px;
-    } */
-
     .featured-post-main-image {
         width: 60%;
-        margin: 0 auto;
+        margin: 1rem auto 1.5rem auto;
     }
 
 }
