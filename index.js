@@ -1,5 +1,5 @@
-import { morePosts } from '/data.js'
-import { footer } from '/footer.js'
+import morePosts from '/data.js'
+import footer from '/footer.js'
 
 const mobileNavHome = document.getElementById("mobile-nav-home")
 const mobileNavPosts = document.getElementById("mobile-nav-posts")
