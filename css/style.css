@@ -148,7 +148,7 @@ header,
 .recent-posts {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 1rem;
+    grid-gap: 1.5rem;
     width: 100%;
     margin: 0 auto;
     padding-top: 1rem;
@@ -158,7 +158,7 @@ header,
 .recent-posts-more {
     display: none; /* grid when displayed */
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 1rem;
+    grid-gap: 1.5rem;
     width: 100%;
     margin: 0 auto;
     padding-bottom: 0;
@@ -400,6 +400,7 @@ nav a:hover {
     .recent-posts,
     .recent-posts-more {
         grid-template-columns: repeat(3, minmax(200px, 1fr));
+        grid-gap: 1rem;
     }
 
     .about-me-top {
