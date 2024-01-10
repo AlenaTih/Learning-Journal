@@ -1,4 +1,4 @@
-export const morePosts = [
+const morePosts = [
     {
         image: "images/blog-four-image.png",
         alt: "recent post image",
