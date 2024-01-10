@@ -2,7 +2,7 @@
 
 ## Overview
 
-Welcome to "My Learning Journal," a personal project documenting my journey into Frontend development. This repository serves as a digital diary where I share insights, experiences, and the milestones achieved on this coding adventure.
+Welcome to My Learning Journal, a personal project documenting my journey into Frontend development. This repository serves as a digital diary where I share insights, experiences, and the milestones achieved on this coding adventure.
 
 Explore the blog posts to follow my progress, from overcoming first-day jitters to conquering the complexities of Frontend frameworks. Each post is a snapshot of my learning journey, capturing the challenges and triumphs of becoming a Frontend developer.
 
