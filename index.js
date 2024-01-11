@@ -97,6 +97,7 @@ function showEvenMorePosts() {
     showMorePosts()
 }
 
+// Refactor this
 function rootClick(e) {
     if (mobileNavHome &&
         document.getElementById("mobile-menu-container-home").style.display === "flex" &&
