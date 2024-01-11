@@ -9,7 +9,7 @@ body {
     background-color: #F9FAFB;
     margin: 0;
     padding: 0;
-    user-select: text;
+    user-select: none;
 }
 
 /* body {
