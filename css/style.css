@@ -180,8 +180,6 @@ header,
 
 .recent-post-image:hover,
 .recent-post-title:hover {
-/* .recent-post-preview:hover,
-.recent-post .post-info:hover { */
     cursor: pointer;
 }
 
@@ -234,7 +232,6 @@ li:last-of-type {
 }
 
 li:hover {
-    /* background-color: lightgray; */
     background-color: #374151;
 }
 
@@ -351,13 +348,8 @@ nav a:hover {
         font-size: 2.5rem;
     }
 
-    /* .about-me-subtitle {
-        font-size: 1.25rem;
-    } */
-
     .post-preview,
     .about-me-preview {
-        /* font-size: 1.375; */
         font-size: 1.5rem;
     }
 
