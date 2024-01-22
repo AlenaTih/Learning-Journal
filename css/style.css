@@ -89,10 +89,12 @@ footer h6 {
 
 header {
     display: flex;
+    background-color: #F9FAFB;
     /* background-color: #374151; */
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
 }
 
 .logo-container {
@@ -109,6 +111,10 @@ nav {
 
 .mobile-nav {
     display: flex;
+}
+
+main {
+    padding-top: 10rem;
 }
 
 header,
