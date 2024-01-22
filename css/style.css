@@ -114,7 +114,7 @@ nav {
 }
 
 main {
-    padding-top: 2.5rem;
+    padding-top: 10.625rem;
 }
 
 header,
@@ -375,10 +375,6 @@ nav a:hover {
 
     .mobile-nav {
         display: none;
-    }
-
-    main {
-        padding-top: 9rem;
     }
 
     header,
